@@ -1,0 +1,10 @@
+export const RESET_ALL: string = "RESET_ALL";
+export const UNSET_ERROR: string = "UNSET_ERROR";
+export const RESET_API_DATA: string = "RESET_API_DATA";
+export const LOADING_API_DATA: string = "LOADING_API_DATA";
+export const SET_API_DATA: string = "SET_API_DATA";
+export const SET_FORMATTED_DATA: string = "SET_FORMATTED_DATA";
+export const API_FAILURE: string = "API_FAILURE";
+export const HIDE_CITY: string = "HIDE_CITY";
+export const SHOW_CITY: string = "SHOW_CITY";
+export const SET_SELECTED_CITY: string = "SET_SELECTED_CITY";
