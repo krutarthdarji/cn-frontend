@@ -12,6 +12,15 @@ import {
   UNSET_ERROR,
 } from "./global.types";
 
+/**
+ * The `fetchWeatherData` function is an asynchronous action that retrieves weather data from the API
+ * and dispatches actions based on the result.
+ *
+ * @async
+ * @function
+ * @throws {Error} Throws an error if there is an issue with the API request or data processing.
+ * @returns {Promise<void>} A Promise that resolves once the weather data is fetched and actions are dispatched.
+ */
 let fetchWeatherData =
   () => async (dispatch: AppDispatch, getState: () => RootState) => {
     try {
@@ -53,6 +62,12 @@ let fetchWeatherData =
     }
   };
 
+/**
+ * The `fetchCityData` function is an asynchronous action that retrieves weather data for a specified
+ * city and dispatches actions based on the result.
+ * @param {string | null} cityName - The `cityName` parameter is a string that represents the name of a
+ * city. It can also be `null` if no city name is provided.
+ */
 let fetchCityData =
   (cityName: string | null) =>
   async (dispatch: AppDispatch, getState: () => RootState) => {

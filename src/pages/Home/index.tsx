@@ -6,6 +6,14 @@ import { fetchWeatherData } from "../../redux/global/global.action";
 import CityCard from "../../components/CityCard";
 import HiddenCities from "../../components/HiddenCities";
 
+/**
+ * Functional React component representing the home page of the weather app.
+ * It displays a list of cities with weather information and allows users to refresh the data.
+ *
+ * @component
+ * @returns {JSX.Element} The JSX element for the Home component.
+ */
+
 const Home: FC = () => {
   const {
     home,

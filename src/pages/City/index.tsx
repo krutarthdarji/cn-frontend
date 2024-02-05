@@ -10,6 +10,14 @@ interface Params {
   cityName: string;
 }
 
+/**
+ * The above function is a React component that displays city data based on the city name provided in
+ * the URL parameters.
+ * @returns The component is returning either a message indicating that the city was not found and
+ * providing a link to the home page, or a loading spinner if the data is still being fetched, or a
+ * CityCard component with the city's name, image, temperature data, and a flag indicating that it is
+ * not the home page.
+ */
 const City: FC = () => {
   let { cityName } = useParams<Params>();
   const dispatch = useDispatch();

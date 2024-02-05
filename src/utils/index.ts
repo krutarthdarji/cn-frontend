@@ -1,6 +1,16 @@
 import { CityData, FormattedCityData } from "../redux/interface";
 
-// This function is used to convert the temperature in degree celcius.
+/**
+ * The function "convertTemperature" converts a temperature value from Fahrenheit or Kelvin to Celsius,
+ * or returns the temperature value if it is already in Celsius.
+ * @param {number} temperature - The `temperature` parameter is a number that represents the
+ * temperature value to be converted.
+ * @param {string} [unit=C] - The `unit` parameter in the `convertTemperature` function is a string
+ * that represents the unit of temperature. It can have three possible values: "C" for Celsius, "F" for
+ * Fahrenheit, and "K" for Kelvin. The default value is "C" if no unit is provided
+ * @returns The function `convertTemperature` returns a number that represents the converted
+ * temperature.
+ */
 const convertTemperature = (temperature: number, unit: string = "C") => {
   if (unit === "F") {
     return Number(((temperature - 32) / 1.8).toFixed(2));
@@ -10,6 +20,13 @@ const convertTemperature = (temperature: number, unit: string = "C") => {
   return Number(temperature.toFixed(2));
 };
 
+/**
+ * The `structureApiData` function takes an array of `CityData` objects, formats the data, and returns
+ * a sorted and structured array of `FormattedCityData` objects.
+ * @param {CityData[]} data - An array of objects representing city data. Each object has the following
+ * properties:
+ * @returns an array of objects of type `FormattedCityData`.
+ */
 export function structureApiData(data: CityData[]) {
   const resultArray: FormattedCityData[] = [];
   data.forEach((entry) => {

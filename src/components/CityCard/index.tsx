@@ -15,6 +15,12 @@ interface CityCardProps {
   isHomePage: boolean;
 }
 
+/**
+ * The CityCard component is a TypeScript React component that renders a card displaying information
+ * about a city, including its name, image, and temperature data.
+ * @param  - - `image`: The image URL for the city.
+ * @returns The CityCard component is being returned.
+ */
 const CityCard: FC<CityCardProps> = ({
   image,
   name,
