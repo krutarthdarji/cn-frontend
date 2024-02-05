@@ -1,2 +1,1 @@
-export const BASE_URL: string =
-  "http://127.0.0.1:8080/https://us-central1-mobile-assignment-server.cloudfunctions.net/weather";
+export const BASE_URL: string = process.env.REACT_APP_BASE_URL as string;
